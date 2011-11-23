@@ -1,5 +1,4 @@
 #include "SneakyJoystick.h"
-#include "math.h"
 
 using namespace cocos2d;
 
@@ -24,9 +23,9 @@ bool SneakyJoystick::initWithRect(CCRect rect)
 		hasDeadzone = false;
 		numberOfDirections = 4;
 		
-		this->set_joystickRadius(rect.size.width/2);
-		this->set_thumbRadius(32.0f);
-		this->set_deadRadius(0.0f);
+		this->setJoystickRadius(rect.size.width/2);
+		this->setThumbRadius(32.0f);
+		this->setDeadRadius(0.0f);
 		
 		//Cocos node stuff
 		setPosition(rect.origin);
@@ -96,7 +95,7 @@ void SneakyJoystick::setIsDPad(bool b)
 	isDPad = b;
 	if(isDPad){
 		hasDeadzone = true;
-		this->set_deadRadius(10.0f);
+		this->setDeadRadius(10.0f);
 	}
 }
 

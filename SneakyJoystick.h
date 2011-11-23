@@ -10,17 +10,17 @@ protected:
 	float thumbRadiusSq;
 	float deadRadiusSq;
 
-	CC_SYNTHESIZE_READONLY(cocos2d::CCPoint, stickPosition, _stickPosition);
-	CC_SYNTHESIZE_READONLY(float, degrees, _degrees);
-	CC_SYNTHESIZE_READONLY(cocos2d::CCPoint, velocity, _velocity);
-	CC_SYNTHESIZE(bool, autoCenter, _autoCenter);
-	CC_SYNTHESIZE(bool, isDPad, _isDPad);
-	CC_SYNTHESIZE(bool, hasDeadzone, _hasDeadzone);
-	CC_SYNTHESIZE(int, numberOfDirections, _numberOfDirections);
+	CC_SYNTHESIZE_READONLY(cocos2d::CCPoint, stickPosition, StickPosition);
+	CC_SYNTHESIZE_READONLY(float, degrees, Degrees);
+	CC_SYNTHESIZE_READONLY(cocos2d::CCPoint, velocity, Velocity);
+	CC_SYNTHESIZE(bool, autoCenter, AutoCenter);
+	CC_SYNTHESIZE_READONLY(bool, isDPad, IsDPad);
+	CC_SYNTHESIZE(bool, hasDeadzone, HasDeadzone);
+	CC_SYNTHESIZE(int, numberOfDirections, NumberOfDirections);
 
-	CC_SYNTHESIZE(float, joystickRadius, _joystickRadius);
-	CC_SYNTHESIZE(float, thumbRadius, _thumbRadius);
-	CC_SYNTHESIZE(float, deadRadius, _deadRadius);
+	CC_SYNTHESIZE_READONLY(float, joystickRadius, JoystickRadius);
+	CC_SYNTHESIZE_READONLY(float, thumbRadius, ThumbRadius);
+	CC_SYNTHESIZE_READONLY(float, deadRadius, DeadRadius);
 
 	virtual ~SneakyJoystick();
 
