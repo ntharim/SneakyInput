@@ -3,7 +3,7 @@
 
 #include "SneakyButton.h"
 
-class SneakyButtonSkinnedBase : public cocos2d::CCSprite 
+class SneakyButtonSkinnedBase : public cocos2d::CCLayer 
 {
 	CC_SYNTHESIZE_READONLY(cocos2d::CCSprite *, defaultSprite, DefaultSprite);
 	CC_SYNTHESIZE_READONLY(cocos2d::CCSprite *, activatedSprite, ActivatedSprite);
@@ -13,8 +13,8 @@ class SneakyButtonSkinnedBase : public cocos2d::CCSprite
 	CC_SYNTHESIZE_READONLY(SneakyButton *, button, Button); //Not sure about this
 
 	//Public methods
-	virtual ~SneakyButtonSkinnedBase();
 	LAYER_NODE_FUNC(SneakyButtonSkinnedBase);
+	virtual ~SneakyButtonSkinnedBase();
 	bool init();
 	void watchSelf(cocos2d::ccTime delta);
 	void setContentSize(cocos2d::CCSize s);

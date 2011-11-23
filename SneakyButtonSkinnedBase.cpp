@@ -34,7 +34,7 @@ SneakyButtonSkinnedBase::~SneakyButtonSkinnedBase()
 bool SneakyButtonSkinnedBase::init() //Possible errors here
 {
 	bool pRet = false;
-	if(CCSprite::init()){
+	if(CCLayer::init()){
 		this->defaultSprite = NULL;
 		//defaultSprite->retain();
 		this->activatedSprite = NULL;
@@ -86,7 +86,7 @@ void SneakyButtonSkinnedBase::watchSelf(ccTime delta) //Be Careful Here
 
 void SneakyButtonSkinnedBase::setContentSize(CCSize s)
 {
-	CCSprite::setContentSize(s);
+	CCLayer::setContentSize(s);
 	defaultSprite->setContentSize(s);
 	//button->setRadius(s.width/2);
 }

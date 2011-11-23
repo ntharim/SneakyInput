@@ -3,7 +3,7 @@
 
 #include "cocos2d.h"
 
-class SneakyJoystick : public cocos2d::CCSprite, public cocos2d::CCTargetedTouchDelegate 
+class SneakyJoystick : public cocos2d::CCNode, public cocos2d::CCTargetedTouchDelegate 
 {
 protected:
 	float joystickRadiusSq;

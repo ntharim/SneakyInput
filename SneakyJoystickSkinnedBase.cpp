@@ -25,7 +25,7 @@ SneakyJoystickSkinnedBase::~SneakyJoystickSkinnedBase()
 bool SneakyJoystickSkinnedBase::init()
 {
 	bool pRet = false;
-	if(CCSprite::init()){
+	if(CCLayer::init()){
 		this->backgroundSprite = NULL;
 
 		this->thumbSprite = NULL;
@@ -46,7 +46,7 @@ void SneakyJoystickSkinnedBase::updatePositions(ccTime delta)
 
 void SneakyJoystickSkinnedBase::setContentSize(CCSize s)
 {
-	CCSprite::setContentSize(s);
+	CCLayer::setContentSize(s);
 	backgroundSprite->setContentSize(s);
 	//joystick.joystickRadius = s.width/2;
 }

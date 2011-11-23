@@ -14,7 +14,7 @@ SneakyJoystick::~SneakyJoystick()
 bool SneakyJoystick::initWithRect(CCRect rect)
 {
 	bool pRet = false;
-	if(CCSprite::init()){
+	//if(CCSprite::init()){
 		stickPosition = CCPointZero;
 		degrees = 0.0f;
 		velocity = CCPointZero;
@@ -30,7 +30,7 @@ bool SneakyJoystick::initWithRect(CCRect rect)
 		//Cocos node stuff
 		setPosition(rect.origin);
 		pRet = true;
-}
+	//}
 	return pRet;
 }
 
@@ -116,8 +116,6 @@ void SneakyJoystick::setDeadRadius(float r)
 	deadRadius = r;
 	deadRadiusSq = r*r;
 }
-
-#pragma mark Touch Delegate
 
 bool SneakyJoystick::ccTouchBegan(CCTouch *touch, CCEvent *event)
 {

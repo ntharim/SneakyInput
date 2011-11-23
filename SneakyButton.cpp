@@ -15,7 +15,7 @@ void SneakyButton::onExit()
 bool SneakyButton::initWithRect(CCRect rect)
 {
 	bool pRet = false;
-	if(CCSprite::init()){
+	//if(CCSprite::init()){
 		
 		bounds = CCRectMake(0, 0, rect.size.width, rect.size.height);
 		center = CCPointMake(rect.size.width/2, rect.size.height/2);
@@ -29,7 +29,7 @@ bool SneakyButton::initWithRect(CCRect rect)
 		
 		setPosition(rect.origin); //not sure about this
 		pRet = true;
-	}
+	//}
 	return pRet;
 }
 
