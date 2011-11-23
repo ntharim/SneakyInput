@@ -5,12 +5,12 @@
 
 class SneakyButtonSkinnedBase : public cocos2d::CCSprite 
 {
-	CC_SYNTHESIZE_READONLY(cocos2d::CCSprite *, defaultSprite, _defaultSprite);
-	CC_SYNTHESIZE_READONLY(cocos2d::CCSprite *, activatedSprite, _activatedSprite);
-	CC_SYNTHESIZE_READONLY(cocos2d::CCSprite *, disabledSprite, _disabledSprite);
-	CC_SYNTHESIZE_READONLY(cocos2d::CCSprite *, pressSprite, _pressSprite);
+	CC_SYNTHESIZE_READONLY(cocos2d::CCSprite *, defaultSprite, DefaultSprite);
+	CC_SYNTHESIZE_READONLY(cocos2d::CCSprite *, activatedSprite, ActivatedSprite);
+	CC_SYNTHESIZE_READONLY(cocos2d::CCSprite *, disabledSprite, DisabledSprite);
+	CC_SYNTHESIZE_READONLY(cocos2d::CCSprite *, pressSprite, PressSprite);
 
-	CC_SYNTHESIZE_READONLY(SneakyButton *, button, _button); //Not sure about this
+	CC_SYNTHESIZE_READONLY(SneakyButton *, button, Button); //Not sure about this
 
 	//Public methods
 	virtual ~SneakyButtonSkinnedBase();

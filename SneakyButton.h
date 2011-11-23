@@ -11,14 +11,14 @@ protected:
 
 	cocos2d::CCRect bounds;
 
-	CC_SYNTHESIZE(bool, status, _status);
-	CC_SYNTHESIZE_READONLY(bool, active, _active);
-	CC_SYNTHESIZE_READONLY(bool, value, _value);
-	CC_SYNTHESIZE(bool, isHoldable, _isHoldable);
-	CC_SYNTHESIZE(bool, isToggleable, _isToggleable);
-	CC_SYNTHESIZE(float, rateLimit, _rateLimit);
+	CC_SYNTHESIZE(bool, status, Status);
+	CC_SYNTHESIZE_READONLY(bool, active, Active);
+	CC_SYNTHESIZE_READONLY(bool, value, Value);
+	CC_SYNTHESIZE(bool, isHoldable, IsHoldable);
+	CC_SYNTHESIZE(bool, isToggleable, IsToggleable);
+	CC_SYNTHESIZE(float, rateLimit, RateLimit);
 
-	CC_SYNTHESIZE(float, radius, _radius);
+	CC_SYNTHESIZE_READONLY(float, radius, Radius);
 
 	//Public methods
 	virtual void onEnterTransitionDidFinish();

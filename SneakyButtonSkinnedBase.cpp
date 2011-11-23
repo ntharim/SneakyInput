@@ -54,7 +54,7 @@ bool SneakyButtonSkinnedBase::init() //Possible errors here
 
 void SneakyButtonSkinnedBase::watchSelf(ccTime delta) //Be Careful Here
 {
-	if (!this->button->get_status()){
+	if (!this->button->getStatus()){
 		if(disabledSprite){
 			disabledSprite->setIsVisible(true);
 		}
@@ -63,9 +63,9 @@ void SneakyButtonSkinnedBase::watchSelf(ccTime delta) //Be Careful Here
 		}
 	}
 	else {
-		if(!this->button->get_active()){
+		if(!this->button->getActive()){
 			pressSprite->setIsVisible(false);
-			if(this->button->get_value() == 0){
+			if(this->button->getValue() == 0){
 				activatedSprite->setIsVisible(false);
 				if(defaultSprite){
 					defaultSprite->setIsVisible(true);
