@@ -12,7 +12,7 @@ protected:
 	cocos2d::CCRect bounds;
 
 	CC_SYNTHESIZE(bool, status, Status);
-	CC_SYNTHESIZE_READONLY(bool, active, Active);
+	CC_SYNTHESIZE_READONLY(bool, active, IsActive);
 	CC_SYNTHESIZE_READONLY(bool, value, Value);
 	CC_SYNTHESIZE(bool, isHoldable, IsHoldable);
 	CC_SYNTHESIZE(bool, isToggleable, IsToggleable);

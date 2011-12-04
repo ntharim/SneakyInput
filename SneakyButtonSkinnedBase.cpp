@@ -63,7 +63,7 @@ void SneakyButtonSkinnedBase::watchSelf(ccTime delta) //Be Careful Here
 		}
 	}
 	else {
-		if(!this->button->getActive()){
+		if(!this->button->getIsActive()){
 			pressSprite->setIsVisible(false);
 			if(this->button->getValue() == 0){
 				activatedSprite->setIsVisible(false);
