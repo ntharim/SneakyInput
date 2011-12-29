@@ -167,6 +167,6 @@ void SneakyButtonSkinnedBase::setButton(SneakyButton *aButton)
 	if(aButton){
 		this->addChild(button, 4);
 		if(defaultSprite)
-			button->setRadius(defaultSprite->getContentSize().width/2);
+			button->setRadius(defaultSprite->boundingBox().size.width/2);
 	}
 }

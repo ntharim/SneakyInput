@@ -95,11 +95,11 @@ void SneakyJoystickSkinnedBase::setJoystick(SneakyJoystick *aJoystick)
 	if(aJoystick){
 		this->addChild(aJoystick, 2);
 		if(thumbSprite)
-			joystick->setThumbRadius(thumbSprite->getContentSize().width/2);
+			joystick->setThumbRadius(thumbSprite->boundingBox().size.width/2);
 		else
 			joystick->setThumbRadius(0);
 		
 		if(backgroundSprite)
-			joystick->setJoystickRadius(backgroundSprite->getContentSize().width/2);
+			joystick->setJoystickRadius(backgroundSprite->boundingBox().size.width/2);
 	}
 }
