@@ -102,3 +102,13 @@ void SneakyButton::ccTouchCancelled(CCTouch *touch, CCEvent *event)
 {
 	this->ccTouchEnded(touch, event);
 }
+
+void SneakyButton::touchDelegateRelease()
+{
+	this->release();
+}
+
+void SneakyButton::touchDelegateRetain()
+{
+	this->retain();
+}
